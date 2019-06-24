@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "links": [
+      {
+        "to": "1.1",
+        "title": "Lioudmila Pavlitchenko",
+        "image": "lioudmila_choix.jpg"
+      },
+      {
+        "to": "2.1",
+        "title": "Simone Segouin",
+        "image": "segouin_choix.jpg"
+      }
+    ]
+  },
+  {
+    "id": "1.1",
+    "title": "Le patriotimse, une force",
+    "description": "Lorsque les forces allemandes envahirent l’Union soviétique en 1941, Lioudmila Pavlitchenko espère être enrôlée au sein la 25e Division de fusiliers de l’Armée rouge. Seul problème : à l’époque, les femmes étaitent reléguées aux rôles de soutien.",
+    "image": "lioudmila_pavlitchenko.jpg"
+  },
+  {
+    "id": "1.2",
+    "video": "flower.mp4"
+  },
+  {
+    "id": "1.3",
+    "title": "Des faits marquants",
+    "links": [
+      {
+        "to": "events/1.3.1.1",
+        "title": "Saviez-vous d’où provient son surnom, « Lady Death » ?",
+        "image": "lioudmilaFait.jpg"
+      },
+      {
+        "to": "events/1.3.2.1",
+        "title": "Reception à la Maison Blanche",
+        "image": "lioudmilaFait_2.jpg"
+      }
+    ]
+  },
+  {
+    "id": "1.3.1.1",
+    "title": "Une tueuse aguerie",
+    "description": "Du siège d’Odessa en passant par celui de Sébastopole, de 1941-1942, elle tua 309 nazis pour le compte de l’armée soviétique, ce qui lui valut le surnom approprié de « Lady Death » par les journalistes.",
+    "image": "lioudmilaFait_1.jpg"
+  },
+  {
+    "id": "1.3.2.1",
+    "video": "flower.mp4"
+  },
+  {
+    "id": "1.3.2.2",
+    "title": "Un modèle pour les troupes",
+    "description": "Fin 1942, Pavlitchenko est envoyée aux États-Unis. Elle devint la première citoyenne soviétique à visiter la Maison Blanche. La première dame invita Pavlitchenko à effectuer une tournée à travers tous les États-Unis afin d’évoquer ses faits d’armes.",
+    "image": "lioudmilaFait_2.jpg"
+  },
+  {
+    "id": "2.1"
+  }
+]
