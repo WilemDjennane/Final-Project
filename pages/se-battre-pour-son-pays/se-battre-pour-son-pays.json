@@ -24,7 +24,7 @@
   },
   {
     "id": "1.2",
-    "video": "flower.mp4",
+    "video": "lioudmilaPavlichenko.mp4",
     "prev": "1.1",
     "next": "1.3"
   },
@@ -52,11 +52,11 @@
     "description": "Du siège d’Odessa en passant par celui de Sébastopole, de 1941-1942, elle tua 309 nazis pour le compte de l’armée soviétique, ce qui lui valut le surnom approprié de « Lady Death » par les journalistes.",
     "image": "lioudmilaFait_1.jpg",
     "prev": "/se-battre-pour-son-pays/1.3",
-    "next": "/se-battre-pour-son-pays/1.4"
+    "next": "/se-battre-pour-son-pays/1.3"
   },
   {
     "id": "1.3.2.1",
-    "video": "flower.mp4",
+    "video": "speech.mp4",
     "prev": "/se-battre-pour-son-pays/1.3",
     "next": "1.3.2.2"
   },
@@ -72,6 +72,7 @@
     "id": "1.4",
     "title" : "Et maintenant ?",
     "description": "Au cours de l'histoire, les « sniper » ont toujours fait l’objet de tous les fantasmes, faisant souvent figure de héros dans les films de guerre, une certaine guerre de propagande. Ses exploits ont fait l’objet d’une récupération politiques avant d’être totalement oublié à la fin de la guerre. La reconnaissance reçu fut éphémère.",
+    "audio": "VoixOff_Lioudmila_Pavlitchenko.mp3",
     "prev": "1.3",
     "next": "1.5"
   },
@@ -87,22 +88,23 @@
     "id": "2.1",
     "title": "Le patriotimse, une force",
     "description": "La complicité unique entre Simone Segouin et son père eut de l’influence sur elle. Admirative de ce résistant de la première heure, elle décida elle-même de s’engager à seulement 19 ans.",
-    "image": "lioudmilaFait.jpg",
+    "image": "segouin_1.jpg",
     "prev": "1",
     "next": "2.2"
   },
   {
     "id": "2.2",
     "title": "Des faits marquants",
-    "images": [
+    "audio": "",
+     "images": [
       {
-        "name": "lioudmilaFait.jpg"
+        "name": "segouin_2.jpg"
       },
       {
-        "name": "lioudmilaFait.jpg"
+        "name": "segouin_3.jpg"
       },
       {
-        "name": "lioudmilaFait.jpg"
+        "name": "segouin_4.jpg"
       }
     ],
     "prev": "2.1",

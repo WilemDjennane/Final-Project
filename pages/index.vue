@@ -15,9 +15,22 @@ export default {
       page: data
     }
   },
+  beforeMount() {
+    document.addEventListener('wheel', this.onScroll)
+  },
+  beforeDestroy() {
+    document.removeEventListener('wheel', this.onScroll)
+  },
   methods: {
     getImage(name) {
       return require(`../assets/images/${name}`)
+    },
+    onScroll() {
+      if (event.deltaY > 0) {
+        if (this.page.next) {
+          this.$router.push({ path: `/${this.page.next}` })
+        }
+      }
     }
   }
 }
@@ -50,15 +63,14 @@ div{
     z-index: 1;
 
      &::before {
-       position: absolute;
-       content: '';
-       transform: translate(-50%);
-       bottom: -5px;
-       left: 50%;
-       width: 130px;
-       height: 4px;
-       background-color: #7CA8BD;
-
+        position: absolute;
+        content: '';
+        transform: translate(-50%);
+        bottom: -5px;
+        left: 50%;
+        width: 130px;
+        height: 4px;
+        background-color: #7CA8BD;
      }
   }
   p{

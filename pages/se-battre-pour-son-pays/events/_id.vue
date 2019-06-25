@@ -1,8 +1,12 @@
 <template>
   <section>
-   <RightContent v-if="page.id === '1.3.1.1'" />
-   <LeftContent v-if="page.id === '1.3.2.2'" />
+    <RightContent v-if="page.id === '1.3.1.1'" />
+    <LeftContent v-if="page.id === '1.3.2.2'" />
     <Video v-if="page.video" />
+    <header>
+      <nuxt-link :to="page.prev" class="button">précédent</nuxt-link>
+      <nuxt-link :to="page.next" class="button">suivant</nuxt-link>
+    </header>
   </section>
 </template>
 

@@ -11,10 +11,6 @@
           </nuxt-link>
         </div>
       </article>
-      <header>
-        <nuxt-link :to="page.prev" class="button">Précédent</nuxt-link>
-        <nuxt-link :to="page.next" class="button">Suivant</nuxt-link>
-      </header>
     </div>
   </section>
 </template>
@@ -38,6 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 section{
+  background-color: #ffffff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -52,6 +49,18 @@ section{
     color: #000000;
     text-transform: uppercase;
     font-weight: bold;
+
+    &::before {
+       position: absolute;
+       content: '';
+       transform: translate(-50%);
+       bottom: -5px;
+       left: 50%;
+       width: 130px;
+       height: 4px;
+       background-color: #7CA8BD;
+
+     }
   }
 
   .container{
@@ -70,7 +79,7 @@ section{
       width: 100%;
       height: 100%;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-      z-index: -1;
+      z-index: 1;
     }
   }
 
@@ -78,15 +87,17 @@ section{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -2;
   }
 
   .content{
+    position: absolute;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 
     span{
       font-size: 25px;

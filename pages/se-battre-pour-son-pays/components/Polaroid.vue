@@ -6,10 +6,6 @@
         <img :src="getImage(image.name)" :alt="image.name">
       </span>
     </div>
-    <header>
-      <nuxt-link :to="page.prev" class="button">Précédent</nuxt-link>
-      <nuxt-link :to="page.next" class="button">Suivant</nuxt-link>
-    </header>
   </section>
 </template>
 

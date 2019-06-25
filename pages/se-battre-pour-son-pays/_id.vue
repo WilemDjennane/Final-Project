@@ -24,6 +24,10 @@ import Polaroid from './components/Polaroid'
 const data = require('./se-battre-pour-son-pays.json')
 
 export default {
+  transition: {
+    name: 'slide',
+    duration: '500'
+  },
   components: {
     Menu,
     LeftContent,
@@ -36,31 +40,40 @@ export default {
   },
   data() {
     return {
-      page: data.find(p => p.id === this.$route.params.id)
+      page: data.find(p => p.id === this.$route.params.id),
+      canScroll: false
     }
   },
-  // mounted() {
-  //   this.onScroll()
-  // },
+  beforeMount() {
+    setTimeout(() => {
+      this.canScroll = true
+    }, 1500)
+    window.addEventListener('wheel', this.onScroll)
+  },
+  beforeDestroy() {
+    setTimeout(() => {
+      this.canScroll = true
+    }, 1500)
+    window.removeEventListener('wheel', this.onScroll)
+  },
   methods: {
     getImage(id) {
       return require(`@/assets/images/${id}`)
+    },
+    onScroll() {
+      if (this.canScroll === true) {
+        if (event.deltaY < 0) {
+          if (this.page.prev) {
+            this.$router.push({ path: `/se-battre-pour-son-pays/${this.page.prev}` })
+          }
+        }
+        if (event.deltaY > 0) {
+          if (this.page.next) {
+            this.$router.push({ path: `/se-battre-pour-son-pays/${this.page.next}` })
+          }
+        }
+      }
     }
-    // },
-    // onScroll() {
-    //   window.addEventListener('mousewheel', (event) => {
-    //     if (event.deltaY < 0) {
-    //       if (this.page.prev) {
-    //         this.$router.push({ path: `/se-battre-pour-son-pays/${this.page.prev}` })
-    //       }
-    //     }
-    //     if (event.deltaY > 0) {
-    //       if (this.page.next) {
-    //         this.$router.push({ path: `/se-battre-pour-son-pays/${this.page.next}` })
-    //       }
-    //     }
-    //   })
-    // }
   }
 }
 </script>

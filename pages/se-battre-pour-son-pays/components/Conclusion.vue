@@ -1,13 +1,10 @@
 <template>
   <section>
+    <audio :src="getAudio(page.audio)" autoplay></audio>
     <article>
       <h1> {{ page.title }} </h1>
       <p> {{ page.description }} </p>
     </article>
-    <header>
-      <nuxt-link :to="page.prev" class="button">Précédent</nuxt-link>
-      <nuxt-link :to="page.next" class="button">Suivant</nuxt-link>
-    </header>
   </section>
 </template>
 
@@ -18,6 +15,11 @@ export default {
   data: function () {
     return {
       page: data.find(p => p.id === this.$route.params.id)
+    }
+  },
+  methods: {
+    getAudio(id) {
+      return require(`@/assets/audios/${id}`)
     }
   }
 }
