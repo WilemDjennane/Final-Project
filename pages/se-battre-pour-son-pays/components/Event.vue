@@ -11,6 +11,10 @@
           </nuxt-link>
         </div>
       </article>
+      <header>
+        <nuxt-link :to="page.prev" class="button">Précédent</nuxt-link>
+        <nuxt-link :to="page.next" class="button">Suivant</nuxt-link>
+      </header>
     </div>
   </section>
 </template>

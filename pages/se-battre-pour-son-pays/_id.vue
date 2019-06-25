@@ -1,78 +1,66 @@
 <template>
   <section>
     <Menu v-if="page.id === '1'" />
-    <div v-if="page.id === '1.1'" class="introduction">
-      <div class="introduction__text">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
-      </div>
-      <img :src="getImage(page.image)" :alt="page.title">
-    </div>
+    <LeftContent v-if="page.id === '1.1'" />
+    <RightContent v-if="page.id === '2.1'" />
     <Video v-if="page.video" />
     <Event v-if="page.id === '1.3'" />
+    <Conclusion v-if="page.id === '1.4'" />
+    <Nav v-if="page.id === '1.5' || page.id === '2.3'" />
+    <Polaroid v-if="page.id === '2.2'" />
   </section>
 </template>
 
 <script>
 import Menu from './components/Menu'
+import LeftContent from './components/LeftContent'
+import RightContent from './components/RightContent'
 import Video from './components/Video'
 import Event from './components/Event'
+import Conclusion from './components/Conclusion'
+import Nav from './components/Nav'
+import Polaroid from './components/Polaroid'
+
 const data = require('./se-battre-pour-son-pays.json')
 
 export default {
   components: {
     Menu,
+    LeftContent,
+    RightContent,
     Video,
-    Event
+    Event,
+    Conclusion,
+    Nav,
+    Polaroid
   },
-  data: function () {
+  data() {
     return {
       page: data.find(p => p.id === this.$route.params.id)
     }
   },
+  // mounted() {
+  //   this.onScroll()
+  // },
   methods: {
     getImage(id) {
       return require(`@/assets/images/${id}`)
     }
+    // },
+    // onScroll() {
+    //   window.addEventListener('mousewheel', (event) => {
+    //     if (event.deltaY < 0) {
+    //       if (this.page.prev) {
+    //         this.$router.push({ path: `/se-battre-pour-son-pays/${this.page.prev}` })
+    //       }
+    //     }
+    //     if (event.deltaY > 0) {
+    //       if (this.page.next) {
+    //         this.$router.push({ path: `/se-battre-pour-son-pays/${this.page.next}` })
+    //       }
+    //     }
+    //   })
+    // }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.introduction{
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  background-color: #222222;
-
-  &__text{
-    padding: 0 20% 0 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50vw;
-    z-index: 9;
-    background: linear-gradient(90deg, #222222 70%, rgba(34, 34, 34, 0) 100%);
-
-    h1{
-      font-size: 35px;
-      line-height: 40px;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    p{
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: lighter;
-      margin: 60px 0 0 0;
-    }
-  }
-  img{
-    position: absolute;
-    right: 0;
-    height: 100vh;
-  }
-}
-
-</style>

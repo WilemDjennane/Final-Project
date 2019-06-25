@@ -1,7 +1,9 @@
 <template>
   <section>
     <aside class="introduction">
-      <h1 class="introduction__title">{{ page.title }}</h1>
+      <h1 class="introduction__title">
+        {{ page.title }}
+      </h1>
       <p>{{ page.description }}</p>
     </aside>
     <aside class="information">

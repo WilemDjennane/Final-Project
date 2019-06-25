@@ -1,5 +1,11 @@
 <template>
-  <video :src="getVideo(page.video)" autoplay />
+  <div class="">
+    <video :src="getVideo(page.video)" autoplay />
+    <header>
+      <nuxt-link :to="page.prev" class="button">Précédent</nuxt-link>
+      <nuxt-link :to="page.next" class="button">Suivant</nuxt-link>
+    </header>
+  </div>
 </template>
 
 <script>

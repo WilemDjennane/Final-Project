@@ -18,11 +18,15 @@
     "id": "1.1",
     "title": "Le patriotimse, une force",
     "description": "Lorsque les forces allemandes envahirent l’Union soviétique en 1941, Lioudmila Pavlitchenko espère être enrôlée au sein la 25e Division de fusiliers de l’Armée rouge. Seul problème : à l’époque, les femmes étaitent reléguées aux rôles de soutien.",
-    "image": "lioudmila_pavlitchenko.jpg"
+    "image": "lioudmila_pavlitchenko.jpg",
+    "prev": "1",
+    "next": "1.2"
   },
   {
     "id": "1.2",
-    "video": "flower.mp4"
+    "video": "flower.mp4",
+    "prev": "1.1",
+    "next": "1.3"
   },
   {
     "id": "1.3",
@@ -38,25 +42,78 @@
         "title": "Reception à la Maison Blanche",
         "image": "lioudmilaFait_2.jpg"
       }
-    ]
+    ],
+    "prev": "1.2",
+    "next": "1.4"
   },
   {
     "id": "1.3.1.1",
     "title": "Une tueuse aguerie",
     "description": "Du siège d’Odessa en passant par celui de Sébastopole, de 1941-1942, elle tua 309 nazis pour le compte de l’armée soviétique, ce qui lui valut le surnom approprié de « Lady Death » par les journalistes.",
-    "image": "lioudmilaFait_1.jpg"
+    "image": "lioudmilaFait_1.jpg",
+    "prev": "/se-battre-pour-son-pays/1.3",
+    "next": "/se-battre-pour-son-pays/1.4"
   },
   {
     "id": "1.3.2.1",
-    "video": "flower.mp4"
+    "video": "flower.mp4",
+    "prev": "/se-battre-pour-son-pays/1.3",
+    "next": "1.3.2.2"
   },
   {
     "id": "1.3.2.2",
     "title": "Un modèle pour les troupes",
     "description": "Fin 1942, Pavlitchenko est envoyée aux États-Unis. Elle devint la première citoyenne soviétique à visiter la Maison Blanche. La première dame invita Pavlitchenko à effectuer une tournée à travers tous les États-Unis afin d’évoquer ses faits d’armes.",
-    "image": "lioudmilaFait_2.jpg"
+    "image": "lioudmilaFait_2.jpg",
+    "prev": "1.3.2.1",
+    "next": "/se-battre-pour-son-pays/1.4"
   },
   {
-    "id": "2.1"
+    "id": "1.4",
+    "title" : "Et maintenant ?",
+    "description": "Au cours de l'histoire, les « sniper » ont toujours fait l’objet de tous les fantasmes, faisant souvent figure de héros dans les films de guerre, une certaine guerre de propagande. Ses exploits ont fait l’objet d’une récupération politiques avant d’être totalement oublié à la fin de la guerre. La reconnaissance reçu fut éphémère.",
+    "prev": "1.3",
+    "next": "1.5"
+  },
+  {
+    "id": "1.5",
+    "title": "Simone Segouin",
+    "image": "segouin_choix.jpg",
+    "to": "2.1",
+    "prev": "1.4",
+    "restart": "1.1"
+  },
+  {
+    "id": "2.1",
+    "title": "Le patriotimse, une force",
+    "description": "La complicité unique entre Simone Segouin et son père eut de l’influence sur elle. Admirative de ce résistant de la première heure, elle décida elle-même de s’engager à seulement 19 ans.",
+    "image": "lioudmilaFait.jpg",
+    "prev": "1",
+    "next": "2.2"
+  },
+  {
+    "id": "2.2",
+    "title": "Des faits marquants",
+    "images": [
+      {
+        "name": "lioudmilaFait.jpg"
+      },
+      {
+        "name": "lioudmilaFait.jpg"
+      },
+      {
+        "name": "lioudmilaFait.jpg"
+      }
+    ],
+    "prev": "2.1",
+    "next": "2.3"
+  },
+  {
+    "id": "2.3",
+    "title": "Lioudmila Pavlitchenko",
+    "image": "lioudmila_choix.jpg",
+    "to": "1.2",
+    "prev": "2.2",
+    "restart": "2.1"
   }
 ]
