@@ -1,34 +1,51 @@
 <template>
   <section>
-    <article>
-      <img src="../assets/images/menu_1.jpg" alt>
-      <span>
-        <p>Les services secrets pendant la guerre</p>
-        <nuxt-link to="/" class="button">Découvrir</nuxt-link>
-      </span>
-    </article>
-    <article>
-      <img src="../assets/images/menu_2.jpg" alt>
-      <span>
-        <p>Deux resistantes, deux destins différents</p>
-        <nuxt-link to="/" class="button">Découvrir</nuxt-link>
-      </span>
-    </article>
-    <article>
-      <img src="../assets/images/menu_3.jpg" alt>
-      <span>
-        <p>Se battre pour son pays</p>
-        <nuxt-link to="/se-battre-pour-son-pays/1" class="button">Découvrir</nuxt-link>
-      </span>
-    </article>
-    <article>
-      <span>
-        <p>Après la guerre</p>
-        <nuxt-link to="apres-la-guerre" class="button">Découvrir</nuxt-link>
-      </span>
-    </article>
+    <nuxt-link v-for="menu in page.menu" :key="menu.value" :to="menu.to">
+      <img v-if="menu.image" :src="getImage(menu.image)" :alt="menu.label">
+      <span>{{ menu.label }}</span>
+    </nuxt-link>
   </section>
 </template>
+
+<script>
+const data = require('./menu.json')
+
+export default {
+  transition: {
+    name: 'slide',
+    duration: 500
+  },
+  data() {
+    return {
+      page: data,
+      canScrol: false
+    }
+  },
+  beforeMount() {
+    setTimeout(() => {
+      this.canScroll = true
+    }, 1500)
+    window.addEventListener('wheel', this.onScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('wheel', this.onScroll)
+  },
+  methods: {
+    getImage(id) {
+      return require(`@/assets/images/${id}`)
+    },
+    onScroll() {
+      if (this.canScroll === true) {
+        if (event.deltaY < 0) {
+          if (this.page.prev) {
+            this.$router.push({ path: this.page.prev })
+          }
+        }
+      }
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 section {
@@ -38,24 +55,26 @@ section {
   width: 100vw;
   height: 100vh;
 
-  article {
+  a {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    color: #ffffff;
+
+    &:hover::before{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
 
     &::before {
       content: "";
       position: absolute;
-      background: linear-gradient(
-        0deg,
-        rgba(31, 31, 31, 0.5),
-        rgba(31, 31, 31, 0.5)
-      );
+      background-color: rgba(0, 0, 0, 0.8);
       height: 100%;
       width: 100%;
+      transition: background-color 0.5s ease;
     }
 
     &:nth-child(1) {
@@ -74,35 +93,23 @@ section {
       grid-area: 2 / 2 / 3 / 4;
       width: 100%;
       background-color: #222222;
-
-      p {
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 30px;
-      }
     }
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
       user-select: none;
     }
+
     span {
       position: absolute;
-      z-index: 9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
       padding: 0 10%;
-
-      p {
-        font-size: 20px;
-        letter-spacing: 0.05em;
-        line-height: 30px;
-        text-align: center;
-      }
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 30px;
+      text-align: center;
+      z-index: 9;
     }
   }
 }

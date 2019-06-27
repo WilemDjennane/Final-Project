@@ -23,12 +23,41 @@
 const data = require('./intro.json')
 
 export default {
+  transition: {
+    name: 'slide',
+    duration: 500
+  },
   data: function () {
     return {
-      page: data
+      page: data,
+      canScroll: false
     }
   },
-  methods: {}
+  beforeMount() {
+    setTimeout(() => {
+      this.canScroll = true
+    }, 1500)
+    window.addEventListener('wheel', this.onScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('wheel', this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      if (this.canScroll === true) {
+        if (event.deltaY < 0) {
+          if (this.page.prev) {
+            this.$router.push({ path: this.page.prev })
+          }
+        }
+        if (event.deltaY > 0) {
+          if (this.page.next) {
+            this.$router.push({ path: this.page.next })
+          }
+        }
+      }
+    }
+  }
 }
 </script>
 
@@ -40,15 +69,14 @@ section {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #000000;
-  color: white;
+  background-color: #222222;
 
   .introduction {
-    text-align: left;
-    margin: 30px 0 0 40px;
+    margin: 5% 0 0 5%;
 
     &__title {
       position: relative;
+      text-transform: uppercase;
       font-size: 35px;
       font-weight: bold;
       margin: 0 0 40px 0;
@@ -56,10 +84,10 @@ section {
       &::before {
         position: absolute;
         content: "";
-        width: 100px;
-        height: 4px;
+        width: 150px;
+        height: 5px;
         background-color: #7ca8bd;
-        bottom: -15px;
+        bottom: -10px;
       }
     }
     p {
@@ -93,7 +121,7 @@ section {
         display: flex;
         height: 250px;
         width: 250px;
-        background-color: rgba(255, 255, 255, 0.6);
+        // background-color: rgba(255, 255, 255, 0.6);
       }
     }
     span {

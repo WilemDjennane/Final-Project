@@ -1,21 +1,29 @@
 <template>
-  <div>
+  <section>
     <h1>{{ page.title }}</h1>
     <p>{{ page.subtitle }}</p>
-    <img :src="getImage(page.images)" alt="home_image">
-  </div>
+    <img :src="getImage(page.image)" :alt="page.image">
+  </section>
 </template>
 
 <script>
 const data = require('./home.json')
 
 export default {
-  data: function () {
+  transition: {
+    name: 'slide',
+    duration: 500
+  },
+  data() {
     return {
-      page: data
+      page: data,
+      canScroll: false
     }
   },
   beforeMount() {
+    setTimeout(() => {
+      this.canScroll = true
+    }, 1500)
     document.addEventListener('wheel', this.onScroll)
   },
   beforeDestroy() {
@@ -28,7 +36,7 @@ export default {
     onScroll() {
       if (event.deltaY > 0) {
         if (this.page.next) {
-          this.$router.push({ path: `/${this.page.next}` })
+          this.$router.push({ path: this.page.next })
         }
       }
     }
@@ -37,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div{
+section{
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -45,8 +53,6 @@ div{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  background-size: cover;
 
   &::before {
     position: absolute;
@@ -58,6 +64,7 @@ div{
 
   h1{
     position: relative;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 80px;
     z-index: 1;
@@ -66,15 +73,16 @@ div{
         position: absolute;
         content: '';
         transform: translate(-50%);
-        bottom: -5px;
+        bottom: -10px;
         left: 50%;
         width: 130px;
         height: 4px;
         background-color: #7CA8BD;
      }
   }
+
   p{
-    margin: 20px 0 0 0;
+    margin: 25px 0 0 0;
     font-weight: 450;
     font-style: italic;
     font-size: 20px;
@@ -86,7 +94,6 @@ div{
     width: 100%;
     height: 100%;
     z-index: -5;
-    object-fit: cover
   }
 }
 </style>

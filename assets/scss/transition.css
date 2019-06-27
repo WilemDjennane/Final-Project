@@ -1,9 +1,14 @@
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity .5s;
+  transition: all 0.2s;
 }
 
-.slide-enter,
-.slide-leave-to{
-  opacity: 0;
+.slide-enter{
+  transform: translateX(100vw)
 }
+
+.slide-leave-to{
+  transform: translateX(-100vw)
+}
+
+/*  */
