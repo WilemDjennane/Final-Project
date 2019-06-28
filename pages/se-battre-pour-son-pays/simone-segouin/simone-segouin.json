@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "title": "Le patriotisme, une force",
+    "description": "La complicité unique entre Simone Segouin et son père eut de l’influence sur elle. Admirative de ce résistant de la première heure, elle décida elle-même de s’engager à seulement 19 ans.",
+    "image": "segouin_1.jpg",
+    "prev": "../",
+    "next": "2"
+  },
+  {
+    "id": "2",
+    "title": "Des faits marquants",
+    "icon": "speaker.svg",
+    "audio": "VoixOff_Simone_Segouin.mp3",
+    "images": [
+      {
+        "name": "segouin_2.jpg"
+      },
+      {
+        "name": "segouin_3.jpg"
+      },
+      {
+        "name": "segouin_4.jpg"
+      }
+    ],
+    "prev": "1",
+    "next": "menu"
+  },
+  {
+    "id": "menu",
+    "title": "menu",
+    "links": [
+      {
+        "to": "../lioudmila-pavlitchenko/1",
+        "label": "Lioudmila Pavlitchenko"
+      }
+    ],
+    "prev": "2"
+  }
+]

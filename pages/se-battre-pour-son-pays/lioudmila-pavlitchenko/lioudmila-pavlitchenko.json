@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "title": "Le patriotisme, une force",
+    "description": "Lorsque les forces allemandes envahirent l’Union soviétique en 1941, Lioudmila Pavlitchenko espère être enrôlée au sein la 25e Division de fusiliers de l’Armée rouge. Seul problème : à l’époque, les femmes étaitent reléguées aux rôles de soutien.",
+    "image": "lioudmila_pavlitchenko.jpg",
+    "prev": "../",
+    "next" : "2"
+  },
+  {
+    "id": "2",
+    "video": "lioudmilaPavlichenko.mp4",
+    "title": "Speech",
+    "prev": "1",
+    "next" : "3"
+  },
+  {
+    "id": "3",
+    "title": "Des faits marquants",
+    "links": [
+      {
+        "to": "event/1",
+        "label": "Saviez-vous d’où provient son surnom, « Lady Death » ?",
+        "image": "lioudmilaFait.jpg"
+      },
+      {
+        "to": "event/2",
+        "label": "Réception à la Maison Blanche",
+        "image": "lioudmilaFait_2.jpg"
+      }
+    ],
+    "prev": "2",
+    "next" : "4"
+  },
+  {
+    "id": "4",
+    "title": "Et maintenant ?",
+    "description": "Au cours de l'histoire, les « sniper » ont toujours fait l’objet de tous les fantasmes, faisant souvent figure de héros dans les films de guerre, une certaine guerre de propagande. Ses exploits ont fait l’objet d’une récupération politique avant d’être totalement oublié à la fin de la guerre. La reconnaissance reçu fut éphémère.",
+    "audio": "VoixOff_Lioudmila_Pavlitchenko.mp3",
+    "prev": "3",
+    "next": "menu"
+  },
+  {
+    "id": "menu",
+    "title": "Menu",
+    "links": [
+      {
+        "to": "../simone-segouin/1",
+        "label": "Simone Segouin"
+      }
+    ],
+    "prev": "4"
+  }
+]

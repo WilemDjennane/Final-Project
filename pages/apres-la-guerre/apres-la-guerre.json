@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "title": "Après la guerre",
+    "descriptions": [
+      {
+        "text": "La Seconde Guerre Mondiale a marqué l'émancipation des femmes. Elles se sont engagées militairement, politiquement, elles ont obtenues le droit de vote et d'autre droits encore. Mais cette vision a mis, et met encore aujourd'hui, du temps à entrer dans l'esprit des hommes."
+      },
+      {
+        "text": "Pendant longtemps, l’enseignement ou les films n'ont transmis qu'une histoire militaire des guerres, en montrant qu'il ne s'agissait que d'une affaire d'hommes. Cela n'a commencé à changer que dans les années 1970 avec l’émergence de l’histoire des femmes et d’une histoire sociale des nations en guerre."
+      }
+    ],
+    "prev": "../menu",
+    "next": "2"
+  },
+  {
+    "id": "2",
+    "title": "Conclusion",
+    "video": "conclusion.mp4",
+    "prev": "1",
+    "next": "3"
+  },
+  {
+    "id": "3",
+    "title": "Après la guerre",
+    "descriptions": [
+      {
+        "text": "En France, plus particulièrement, cette participation n'a pas toujours été reconnue après-guerre. Seulement 6 femmes, dont 4 à titre posthume ont été décorées en tant que « compagnons de la liberté », contre 1030 pour les hommes."
+      },
+      {
+        "text": "Bien souvent, au lendemain de la guerre, les femmes reprennent leur vie « ordinaire ». La libération de la France n'a pas été une libération pour la femme, c'est l'image de l'homme en tant que héros qui est mise en avant. Le rôle des femmes n'est pas mis en avant, tout du moins pas celui attendu."
+      }
+    ],
+    "prev": "2"
+  }
+]

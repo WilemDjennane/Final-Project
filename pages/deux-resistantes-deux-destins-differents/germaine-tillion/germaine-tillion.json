@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "title": "L’Opposition au nazisme",
+    "description": "Suite à l’appel du 18 juin du général De Gaulle. La jeune femme, alors âgée de 33 ans décide de s’opposer à l’idéologie nazie dont elle avait pu constater la montée lors de plusieurs séjours en Allemagne en 1933 et en 1937.",
+    "image": "germaine_1.jpg",
+    "prev": "../",
+    "next" : "2"
+  },
+  {
+    "id": "2",
+    "title": "Des faits marquants",
+    "links": [
+      {
+        "to": "event/1",
+        "label": "La famille juive",
+        "image": "germaineFait_1.jpg"
+      },
+      {
+        "to": "event/2",
+        "label": "Camp de Ravensbrück",
+        "image": "germaineFait_2.jpg"
+      }
+    ],
+    "prev": "1",
+    "next": "menu"
+  },
+  {
+    "id": "menu",
+    "title": "Menu",
+    "links": [
+      {
+        "to": "../sophie-scholl/1",
+        "label": "Sophie Scholl"
+      }
+    ],
+    "prev": "2"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "title": "Une tireuse aguerrie",
+    "description": "Du siège d’Odessa en passant par celui de Sébastopol, de 1941-1942, elle a abattue 309 nazis pour le compte de l’armée soviétique, ce qui lui valut le surnom de « Lady Death » par les journalistes.",
+    "image": "lioudmilaFait_1.jpg",
+    "prev": "../3",
+    "next": "../3"
+  },
+  {
+    "id": "2",
+    "video": "speech.mp4",
+    "prev": "../3",
+    "next": "2.1"
+  },
+  {
+    "id": "2.1",
+    "title": "Un modèle pour les troupes",
+    "description": "Fin 1942, Pavlitchenko est envoyée aux États-Unis. Elle devint la première citoyenne soviétique à visiter la Maison Blanche. La première dame invita Pavlitchenko à effectuer une tournée à travers tous les États-Unis afin d’évoquer ses faits d’armes.",
+    "image": "lioudmilaFait_2.jpg",
+    "prev": "2",
+    "next": "../3"
+  }
+]

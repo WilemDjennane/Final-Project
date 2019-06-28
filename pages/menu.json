@@ -1,0 +1,24 @@
+{
+  "menu": [
+    {
+      "label": "Les services secrets pendant la guerre",
+      "to": "les-services-secrets-pendant-la-guerre/1",
+      "image": "menu_1.jpg"
+    },
+    {
+      "label": "Deux résistantes, deux destins différents",
+      "to": "deux-resistantes-deux-destins-differents",
+      "image": "menu_2.jpg"
+    },
+    {
+      "label": "Se battre pour son pays",
+      "to": "se-battre-pour-son-pays",
+      "image": "menu_3.jpg"
+    },
+    {
+      "label": "Après la guerre",
+      "to": "apres-la-guerre/1"
+    }
+  ],
+  "prev": "intro"
+}

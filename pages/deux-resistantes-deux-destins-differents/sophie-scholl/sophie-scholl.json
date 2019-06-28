@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1",
+    "title": "Temoinage",
+    "video" : "sophieScholl.mp4",
+    "prev": "../",
+    "next": "2"
+  },
+  {
+    "id": "2",
+    "title": "La rose Blanche",
+    "description": "À partir de 1942, la jeune allemande s'engage activement dans la résistance au côté de son frère Hans Scholl. Elle aide à imprimer et à diffuser les tracts hostiles au régime nazi et à la guerre.",
+    "image": "scholl_1.jpg",
+    "prev": "1",
+    "next": "3"
+  },
+  {
+    "id": "3",
+    "title": "Des faits marquants",
+    "images": [
+      {
+        "name": "scholl_tractsSchool.jpg",
+        "label": "Tracts lancés avec son frère Hans dans la cour intérieure de l'université de Munich"
+      },
+      {
+        "name": "scholl_tracts.jpg",
+        "label": "Photos des membres de la Rose blanche et reproduction des tracts incrustés sur les pavés devant l'université de Munich."
+      }
+    ],
+    "audio": "VoixOff_Sophie_Scholl_2.mp3",
+    "icon": "speaker.svg",
+    "prev": "2",
+    "next": "4"
+  },
+  {
+    "id": "4",
+    "title": "Et maintenant ?",
+    "description": "Pour son courage et sa non-violence dans sa façon de résister, son image fut récupéré pendant la Guerre Froide par la RFA, allié des États-Unis, contre la RDA. Mais malgré cette récupération politique, elle n'eut d'hommage à son égard qu'à la fin de cette guerre.",
+    "audio": "VoixOff_Sophie_Scholl.mp3",
+    "icon": "speaker.svg",
+    "prev": "3",
+    "next": "menu"
+  },
+  {
+    "id": "menu",
+    "title": "Menu",
+    "links": [
+      {
+        "to": "../germaine-tillion/1",
+        "label": "Germaine Tillion"
+      }
+    ],
+    "prev": "4"
+  }
+]
