@@ -16,7 +16,7 @@ export default {
   beforeMount() {
     setTimeout(() => {
       this.onScroll()
-    }, 5000)
+    }, 2500)
   },
   beforeDestroy() {
     this.onScroll()

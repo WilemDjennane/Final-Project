@@ -1,22 +1,18 @@
 const mongoose = require('mongoose')
-const validator = require('validator')
 
 const Home = mongoose.model('Home', {
-    name: {
-        type: String,
-        required: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
-    age: {
-        type: Number,
-        default: 0
-    },
-    avatar: {
-        type: Buffer
-    }
+  title: {
+    type: String
+  },
+  subtitle: {
+    type: String
+  },
+  next: {
+    type: String
+  },
+  images: {
+    type: String
+  }
 })
 
 module.exports = Home

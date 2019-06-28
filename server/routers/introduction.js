@@ -1,26 +1,25 @@
 const express = require('express')
-const Home = require('../models/home')
+const Introduction = require('../models/introduction')
 const router = new express.Router()
 
-router.post('/new', async(req, res) => {
-    const home = new Home(req.body)
+router.post('/api/intro', async (req, res) => {
+  const introduction = new Introduction(req.body)
 
-    try {
-        await home.save()
-        res.status(201).send(home)
-    } catch (e) {
-        res.status(404).send(e)
-    }
+  try {
+    await introduction.save()
+    res.status(201).send(introduction)
+  } catch (e) {
+    res.status(404).send(e)
+  }
 })
 
-
-router.get('/new', async(req, res) => {
-    try {
-        const homies = await Home.find({})
-        res.send(homies)
-    } catch (e) {
-        res.status(404).send()
-    }
+router.get('/api/intro', async (req, res) => {
+  try {
+    const introduction = await Introduction.find({})
+    res.send(introduction)
+  } catch (error) {
+    res.status(404).send()
+  }
 })
 
 module.exports = router
