@@ -6,7 +6,7 @@
 
 # Front-end: 
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*2QOKCwEhtITQa0RIuoQsYQ.png" /> height="50" ![Vue.js](https://www.vigicorp.fr/blog/wp-content/uploads/2019/03/logo_vue-1.png), scss.
+Nuxt.js, Vue.js, scss.
 
 Nous avons utilisé nuxt.js et vue.js côté front-end afin de récupérer et d'afficher les différents json que nous avons crée.
 Nous nous en sommes servis pour sa facilité de gérer les transitions ainsi que les routes.
