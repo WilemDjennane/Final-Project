@@ -29,7 +29,7 @@ We used it for its ease of managing transitions as well as roads.
 Nuxt.js and view.js running on a system of components made it easier for us to repeat the same component on several pages.
 
 # Back-end:
-Node.js, Express, Mongodb, Mongoose, Postman
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOiKh1Xk5RDZFKPkVXYfi8U-t2cuotiAOR7G_7w_HWXfV02TMnd9wnVM" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/docs/Vue.js_Logo.svg.png" height="50" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg" height="50" /> 
 
 We used node.js and express to manage the api routes.
 Mongodb and Mongoose in order to create our schemas, models and our database.
