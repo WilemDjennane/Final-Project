@@ -5,7 +5,8 @@
 # Stack technique
 
 # Front-end: 
-Nuxt.js, Vue.js, scss.
+
+![Nuxt.js](https://cdn-images-1.medium.com/max/1200/1*2QOKCwEhtITQa0RIuoQsYQ.png), Vue.js, scss.
 
 Nous avons utilisé nuxt.js et vue.js côté front-end afin de récupérer et d'afficher les différents json que nous avons crée.
 Nous nous en sommes servis pour sa facilité de gérer les transitions ainsi que les routes.
