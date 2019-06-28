@@ -13,7 +13,7 @@ Nous nous en sommes servis pour sa facilité de gérer les transitions ainsi que
 Nuxt.js et vue.js fonctionnant sur un système de components il nous a révélé plus facile de répéter un même component sur plusieurs pages.
 
 # Back-end:
-Node.js, Express, Mongodb, Mongoose, Postman
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOiKh1Xk5RDZFKPkVXYfi8U-t2cuotiAOR7G_7w_HWXfV02TMnd9wnVM" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg" height="50" /> 
 
 Nous avons utilisé node.js et express afin de gérer les routes de l'api.
 Mongodb et mongoose dans le but crée nos schemas, models et notre base de données.
