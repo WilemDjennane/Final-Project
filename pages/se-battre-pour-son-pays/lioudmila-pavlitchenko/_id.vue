@@ -21,7 +21,8 @@ const data = require('./lioudmila-pavlitchenko.json')
 
 export default {
   transition: {
-    name: 'slide'
+    name: 'slide',
+    duration: 500
   },
   components: {
     LeftContent,

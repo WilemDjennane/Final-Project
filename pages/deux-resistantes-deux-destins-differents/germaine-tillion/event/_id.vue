@@ -14,7 +14,8 @@ const data = require('./event.json')
 
 export default {
   transition: {
-    name: 'slide'
+    name: 'slide',
+    duration: 500
   },
   components: {
     RightContent,

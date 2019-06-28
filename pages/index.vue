@@ -1,14 +1,13 @@
 <template>
   <section>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.subtitle }}</p>
-    <img :src="getImage(page.image)" :alt="page.image">
+    <article>
+      <h1>Disclaimer</h1>
+      <p>Ce site à été réalisé à des fins pédagogiques dans le cadre du cursus Bachelor de l’école HETIC. Les contenus présentés ne sont en aucun cas exploités à des fins commerciales et ne seront pas publiés</p>
+    </article>
   </section>
 </template>
 
 <script>
-const data = require('./home.json')
-
 export default {
   transition: {
     name: 'slide',
@@ -16,29 +15,20 @@ export default {
   },
   data() {
     return {
-      page: data,
       canScroll: false
     }
   },
   beforeMount() {
     setTimeout(() => {
-      this.canScroll = true
-    }, 1500)
-    document.addEventListener('wheel', this.onScroll)
+      this.onScroll()
+    }, 2000)
   },
   beforeDestroy() {
-    document.removeEventListener('wheel', this.onScroll)
+    this.onScroll()
   },
   methods: {
-    getImage(name) {
-      return require(`../assets/images/${name}`)
-    },
     onScroll() {
-      if (event.deltaY > 0) {
-        if (this.page.next) {
-          this.$router.push({ path: this.page.next })
-        }
-      }
+      this.$router.push({ path: '/home' })
     }
   }
 }
@@ -53,47 +43,20 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #222222;
 
-  &::before {
-    position: absolute;
-    content: '';
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5)
+  article{
+    width: 50%;
+    text-align: center;
   }
-
   h1{
-    position: relative;
-    text-transform: uppercase;
+    font-size: 30px;
     font-weight: bold;
-    font-size: 80px;
-    z-index: 1;
-
-     &::before {
-        position: absolute;
-        content: '';
-        transform: translate(-50%);
-        bottom: -10px;
-        left: 50%;
-        width: 130px;
-        height: 4px;
-        background-color: #7CA8BD;
-     }
+    text-transform: uppercase;
   }
-
   p{
-    margin: 25px 0 0 0;
-    font-weight: 450;
-    font-style: italic;
-    font-size: 20px;
-     z-index: 1;
-  }
-
-  img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -5;
+    margin: 20px 0 0 0;
+    line-height: 30px;
   }
 }
 </style>

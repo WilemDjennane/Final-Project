@@ -56,5 +56,9 @@ section{
       margin: 20px 0;
     }
   }
+  img{
+    height: 40px;
+  }
+
 }
 </style>

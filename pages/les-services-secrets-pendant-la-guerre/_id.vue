@@ -20,7 +20,7 @@ const data = require('./les-services-secrets-pendant-la-guerre.json')
 export default {
   transition: {
     name: 'slide',
-    canScroll: false
+    duration: 500
   },
   components: {
     RightContent,

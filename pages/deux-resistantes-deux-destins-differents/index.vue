@@ -11,7 +11,8 @@ const data = require('./deux-resistantes-deux-destins-differents.json')
 
 export default {
   transition: {
-    name: 'slide'
+    name: 'slide',
+    duration: 500
   },
   components: {
     Choice

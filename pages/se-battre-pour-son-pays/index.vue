@@ -11,7 +11,8 @@ const data = require('./se-battre-pour-son-pays.json')
 
 export default {
   transition: {
-    name: 'slide'
+    name: 'slide',
+    duration: 500
   },
   components: {
     Choice
