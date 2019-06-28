@@ -13,15 +13,10 @@ export default {
     name: 'slide',
     duration: 500
   },
-  data() {
-    return {
-      canScroll: false
-    }
-  },
   beforeMount() {
     setTimeout(() => {
       this.onScroll()
-    }, 2000)
+    }, 5000)
   },
   beforeDestroy() {
     this.onScroll()
