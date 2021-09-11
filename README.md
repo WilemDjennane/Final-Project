@@ -1,6 +1,6 @@
 # ELLES AUSSI
 
-> Women during the Second World War
+> Web documentary about women during the Second World War.
 
 # Stack technique
 
