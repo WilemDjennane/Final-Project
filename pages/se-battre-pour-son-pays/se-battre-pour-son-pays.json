@@ -1,0 +1,15 @@
+{
+  "links": [
+    {
+      "to": "/se-battre-pour-son-pays/lioudmila-pavlitchenko/1",
+      "label": "Lioudmila Pavlitchenko",
+      "image": "lioudmila_choix.jpg"
+    },
+    {
+      "to": "/se-battre-pour-son-pays/simone-segouin/1",
+      "label": "Simone Segouin",
+      "image": "segouin_choix.jpg"
+    }
+  ],
+  "prev": "../menu"
+}

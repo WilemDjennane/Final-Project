@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "title": "La famille juive",
+    "description": "À la fin de l'année 1940, elle donne les papiers de sa famille à une famille juive qui sera ainsi protégée jusqu'à la fin de la guerre.",
+    "image": "germaine_famille.jpg",
+    "prev": "../2",
+    "next": "../2"
+  },
+  {
+    "id": "2",
+    "title": "Camp de Ravensbrück",
+    "description": "Alors qu'elle se trouve au camp de Ravensbrück, Germaine Tillion rédige, en cachette, de fausses recettes de cuisine dont le but est d’écrire le nom des responsables nazis rattachés à ce camp de concentration.",
+    "image": "germaine_recette.jpg",
+    "prev": "../2",
+    "next": "../2"
+  }
+]

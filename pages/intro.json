@@ -1,0 +1,23 @@
+{
+  "title": "Le rôle d'une femme",
+  "description": "Auparavant, l'image de la femme était celle de la mère au foyer qui s'occupait des enfants, de préparer les repas et qui effectuait les tâches ménagères.",
+  "audio": "",
+  "datas": [
+    {
+      "number1": "2%",
+      "description": ", ce sont les effectifs de femmes soldats présentent dans l’Armée rouge."
+    },
+    {
+      "number1": "6600",
+      "description": ", le nombre de femmes s'engagant dans l’Armée Française, grâce à la loi du 11 juillet 1938« Paul Boncour»"
+    },
+    {
+      "number1": "10%",
+      "number2": "16%",
+      "text": "à",
+      "description": "la représentation des femmes résistantes"
+    }
+  ],
+  "prev": "home",
+  "next": "menu"
+}

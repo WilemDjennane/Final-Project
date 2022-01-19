@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "to": "/deux-resistantes-deux-destins-differents/germaine-tillion/1",
+      "label": "Germaine Tillion",
+      "image": "germaine_choix.jpg"
+    },
+    {
+      "to": "/deux-resistantes-deux-destins-differents/sophie-scholl/1",
+      "label": "Sophie Scholl",
+      "image": "scholl_choix.jpg"
+    }
+  ],
+  "prev": "../menu"
+}
+
